@@ -137,5 +137,23 @@ let produtos = [
 ]
 
 //percorrendo cada propriedade e cada valor de cada objeto do vetor produto:
+// for(let produto of produtos){      //for-of para percorrer cada objeto do o vetor
+//     for(let propriedade in produto){   //for-in para percorrer cada propriedade+valor do produto
+//         console.log(propriedade, produto[propriedade]);        
+//     }
+//     console.log('************');    
+// }
+
+// produtos.forEach((produto)=>{
+//     for(let propriedade in produto){
+//         console.log(propriedade, produto[propriedade]);        
+//     }
+//     console.log('////////////////////');
+// });
+
+// for(let i = 0 ; i < produtos.length; i++){
+//     mostraEndereco(produtos[i]);
+// }
 
 
+produtos.forEach( produto => mostraEndereco(produto) );
